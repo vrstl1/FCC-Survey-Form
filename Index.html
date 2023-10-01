@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang='en'>
+ <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+    <h1 id='title'>Survey Form
+      </h1>
+      <div>
+      <p id='descrption'>Please your experience with us.</p>
+      <form id='survey-form'>
+       </div>
+        <div>
+        Name:
+        <input id='name' placeholder='Enter name' type='text'></input>
+        </div>
+        Email:
+        <input id='email' placeholder='Enter valid email address' type='email'></input>
+        <div>
+          Age:
+        <input id='number' placeholder='Age' min='13' max='120'></input>
+        </div>
+        <div>
+        How was your experience
+        <select id='dropdown'>
+              <option value="">(select one)</option>
+            <option value="1">Great</option>
+            <option value="2">Good</option>
+            <option value="3">Ok</option>
+            <option value="4">Sucks</option>
+        </select>
+        </div>
+        <div>
+        Would you try it again?
+             <label for='yes'><input id='yes' type='radio' name="yes-no" value="yes" checked />Yes
+            <label for='no'><input id='no' type='radio' name="yes-no" value="no"/>No
+        </div>
+        <div>
+        Do you have any suggestions on how we can improve?
+        <textarea id='comments' placeholder='Enter suggestions'></textarea>
+        </div>
+        <div>
+        <button id='submit' type='submit' class='submit-button'>Submit</button>
+        </form>
+        </div>
+  </html>
