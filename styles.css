@@ -27,7 +27,7 @@ body::before {
     font-family: arial, san-serif;
   }
   #container {
-      max-width: 500px;
+      max-width: 600px;
       margin: auto;
       background-color: rgba(27, 27, 50, 0.75);
       padding: 2.5rem 0.625rem;
@@ -38,29 +38,36 @@ body::before {
       font-weight: 500;
       line-height: 2;
   }
-  label {
-    display: flex;
-  }
   *,
   *::before, 
   ::after {
     box-sizing: border-box;
   }
-  #name, #email, #number, #comments, #dropdown {
+  #name, #email, #number, #comments {
     width: 95%;
-    height: 45;
+    line-height: 2;
     border-radius: .3rem;
     font-size: 1rem;
   }
-  
-  #submit {
+  #dropdown {
     width: 95%;
+    box-sizing: border-box;
+    padding: .75rem;
+  }
+  border-box {
     height: 50;
+  }
+
+  #submit {
+    display: block;
+    width: 95%;
+    height: 50%;
     Background-color: blue;
     color: white;
     font-size: 1.5rem;
     border-radius: .3rem;
     margin-top: .5rem;
+    padding: .75rem;
   }
   #submit:hover {
     background-color: rgba(125, 0, 125, 80%)
