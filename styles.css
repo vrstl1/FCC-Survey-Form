@@ -1,14 +1,70 @@
-div {
-    background-color: aquamarine;
-    Margin: 5vh;
-    Padding: .5%;
-}
-
-body {
-    font-family: Poppins, Helvetica;
-    align-items: center;
-}
-
-.submit {
-   padding-bottom: 20px;
-}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        1deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://deadentertainment.com/uploads/the-witcher-netflix-new-poster-key-art-01-i28y29t2m4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+  }
+  h1 {
+      margin-top: 50px;
+  }
+  h1, p {
+    text-align: center;
+    color: white;
+    font-family: arial, san-serif;
+  }
+  #container {
+      max-width: 500px;
+      margin: auto;
+      background-color: rgba(27, 27, 50, 0.75);
+      padding: 2.5rem 0.625rem;
+      border-radius: 0.25rem;
+      color: white;
+      font-family: arial, san-serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 2;
+  }
+  label {
+    display: flex;
+  }
+  *,
+  *::before, 
+  ::after {
+    box-sizing: border-box;
+  }
+  #name, #email, #number, #comments, #dropdown {
+    width: 95%;
+    height: 45;
+    border-radius: .3rem;
+    font-size: 1rem;
+  }
+  
+  #submit {
+    width: 95%;
+    height: 50;
+    Background-color: blue;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+    margin-top: .5rem;
+  }
+  #submit:hover {
+    background-color: rgba(125, 0, 125, 80%)
+  }
+  #submit:click {
+    background-color: rgba(108, 7, 25, 10%);
+  }

@@ -5,27 +5,27 @@
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <body/>
     <h1 id='title'>Survey Form
       </h1>
-      <div id="container">
-      <div>
-      <p id='description'>Please share your experience with us.</p>
+      <p id='description'>Please share your experience with us.</p></body>
+       <div id="container">
+      
       <form id='survey-form'>
-       </div>
         <div>
-        Name:
-        <input id='name' placeholder='Enter name' type='text'></input>
+        <label id='name-label'> Name</label>
+        <input id='name' placeholder='Enter name...' type='text' required></input>
         </div>
         <div>
-        Email:
-        <input id='email' placeholder='Enter valid email address' type='email'></input>
+        <label id='email-label'>Email</label>
+        <input id='email' placeholder='Enter valid email address...' required type='email'></input>
       </div>
         <div>
-          Age:
-        <input id='number' placeholder='Age' min='13' max='120'></input>
+          <label id='number-label'>Age</label>
+        <input id='number' placeholder='Age...' min='13' max='120'></input>
         </div>
         <div>
-        How was your experience
+        <label id='experience'>How was your experience?</label>
         <select id='dropdown'>
               <option value="">(select one)</option>
             <option value="1">Great</option>
@@ -35,19 +35,26 @@
         </select>
         </div>
         <div>
-        Would you try it again?
+        <label id='try'>Would you try it again?</label>
              <label for='yes'><input id='yes' type='radio' name="yes-no" value="yes" checked />Yes
             <label for='no'><input id='no' type='radio' name="yes-no" value="no"/>No
         </div>
         <div>
-        Do you have any suggestions on how we can improve?
+        <label id='apply'>Would you recommend us? Click all that apply</label>
+             <label for='friends'><input id='friends' type='checkbox' class="input-checkbox" value="friends" />Friends
+            <label for='family'><input id='family' type='checkbox' class="input-checkbox" value="family"/>Family
+            <label for='co-workers'><input id='co-workers' type='checkbox' class="input-checkbox" value="co-workers"/>Co-workers
+        </div>
+        <div>
+        <label id='improve'>Do you have any suggestions on how we can improve?</label>
       </div>
       <div>
         <textarea id='comments' placeholder='Enter suggestions...'></textarea>
         </div>
         <div>
         <button id='submit' type='submit' class='submit-button'>Submit</button>
-        </form>
+       
         </div>
+         </form>
       </div>
   </html>
