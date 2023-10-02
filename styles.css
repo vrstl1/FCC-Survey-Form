@@ -1,0 +1,14 @@
+div {
+    background-color: aquamarine;
+    Margin: 5vh;
+    Padding: .5%;
+}
+
+body {
+    font-family: Poppins, Helvetica;
+    align-items: center;
+}
+
+.submit {
+   padding-bottom: 20px;
+}
